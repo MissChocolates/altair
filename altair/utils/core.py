@@ -73,7 +73,7 @@ def infer_vegalite_type(data):
     data: Numpy array or Pandas Series
     """
     # Otherwise, infer based on the dtype of the input
-    typ = infer_dtype(data, **_infer_dtype_kwds)
+    typ = infer_dtype(data)
 
     # TODO: Once this returns 'O', please update test_select_x and test_select_y in test_api.py
 
